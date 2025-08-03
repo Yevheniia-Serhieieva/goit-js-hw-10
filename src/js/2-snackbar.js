@@ -16,7 +16,7 @@ form.addEventListener('submit', e => {
     const delay = Number(form.elements.delay.value);
     const state = form.elements.state.value;
 
-    const makePromise = ({delay, state}) => {
+    const makePromise = (delay, state) => {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             if(state === 'fulfilled') {
